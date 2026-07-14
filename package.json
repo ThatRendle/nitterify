@@ -1,11 +1,12 @@
 {
   "name": "nitterify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Redirect x.com status and article links to a Nitter instance (default xcancel.com).",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "package": "npm run build && rm -f nitterify.zip && cd dist && zip -qr -X ../nitterify.zip . && cd ..",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },

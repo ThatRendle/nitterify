@@ -1,4 +1,5 @@
 node_modules/
 dist/
+nitterify.zip
 *.log
 .DS_Store
